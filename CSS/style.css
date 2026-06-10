@@ -1,0 +1,210 @@
+:root {
+  --sena-orange: #FF6B00;
+  --sena-orange-dark: #C44E00;
+  --bg-main: #0F1115;
+  --bg-card: #1B1E26;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --border-color: #262B36;
+  --radius-modern: 12px;
+  --success-green: #10B981;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ESTILO NUEVO PARA EL LOGO PNG */
+.sena-logo {
+  height: 45px;          /* Altura fija para controlar el Header */
+  width: auto;            /* Mantiene la proporción original de tu PNG sin deformarlo */
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 0, 0.2)); /* Sutil brillo naranja */
+}
+
+.header-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header-title span {
+  color: var(--sena-orange);
+}
+
+/* Main Layout */
+main {
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Grid and Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-modern);
+  padding: 30px;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 107, 0, 0.4);
+}
+
+.card-tag {
+  display: inline-block;
+  background-color: rgba(255, 107, 0, 0.1);
+  color: var(--sena-orange);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.spec-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.spec-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: var(--text-secondary);
+}
+
+.spec-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--sena-orange);
+  font-weight: bold;
+}
+
+/* Example UI Box */
+.example-box {
+  background-color: var(--bg-main);
+  border-left: 4px solid var(--sena-orange);
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.example-header h3 {
+  color: var(--sena-orange);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.example-field {
+  margin-bottom: 15px;
+}
+
+.example-label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.example-value {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* Image Block Styles */
+.visual-example {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-top: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive Grid */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-full-width {
+    grid-column: span 2;
+  }
+}

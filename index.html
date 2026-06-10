@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta Técnica - Guía Completa Informativa</title>
+  <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="IMG/favicon.ico" alt="Logo SENA" class="sena-logo">
+        <div class="header-title">Fase de <span>Análisis</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h1>Propuesta Técnica de Software</h1>
+      <p>Estándares de arquitectura, documentación estructural y validación de requerimientos.</p>
+    </section>
+
+    <div class="grid-container">
+      
+      <section class="card">
+        <span class="card-tag">Concepto</span>
+        <h2>El Núcleo de la Propuesta</h2>
+        <p>En el ciclo de desarrollo, la <strong>Propuesta Técnica</strong> formaliza la arquitectura conceptual del software. No es simplemente un presupuesto; es la demostración de ingeniería que valida que entiendes el problema de negocio a profundidad.</p>
+        <p>Establece los cimientos y restricciones tecnológicas que el equipo de frontend, backend y bases de datos seguirá minuciosamente durante las fases de diseño y codificación.</p>
+      </section>
+
+      <section class="card">
+        <span class="card-tag">Definición y Alcance</span>
+        <h2>¿Qué debe contener?</h2>
+        <p>Es un plano detallado que mitiga riesgos imprevistos durante la construcción del sistema. Según estándares de ingeniería, se segmenta en:</p>
+        <ul class="spec-list">
+          <li><strong>Viabilidad Tecnológica:</strong> Justificación de por qué se usa cierto Stack (ej. Java vs Python).</li>
+          <li><strong>Requerimientos de Infraestructura:</strong> Servidores, almacenamiento y servicios cloud requeridos para el despliegue.</li>
+          <li><strong>Modelado de Datos preliminar:</strong> Definición de cómo interactuarán las entidades del sistema y sus restricciones.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="card-tag">Ingeniería de Requisitos</span>
+        <h2>Especificación del Sistema</h2>
+        <p>Toda propuesta técnica exitosa debe segmentar con total claridad las necesidades del sistema en dos pilares fundamentales:</p>
+        <ul class="spec-list">
+          <li><strong>Requerimientos Funcionales (RF):</strong> Definen los servicios y funciones que el software <em>debe hacer</em> (ej. "El sistema debe procesar pagos con tarjeta en menos de 5 segundos").</li>
+          <li><strong>Requerimientos No Funcionales (RNF):</strong> Definen los atributos de calidad y restricciones de cómo debe operar (ej. "La base de datos debe implementar cifrado AES-256 en reposo").</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="card-tag">Planificación</span>
+        <h2>Entregables Clave del Analista</h2>
+        <p>Al finalizar la fase de análisis, el equipo de desarrollo debe radicar un compendio técnico definitivo compuesto por:</p>
+        <ul class="spec-list">
+          <li><strong>Diagramas de Casos de Uso y Clases:</strong> Estructura conceptual del comportamiento del sistema.</li>
+          <li><strong>Diccionario de Datos:</strong> Detalle técnico de cada tabla, tipos de datos y relaciones de la BD.</li>
+          <li><strong>Cronograma de Hitos:</strong> Distribución del desarrollo en Sprints (usando metodologías ágiles como Scrum).</li>
+        </ul>
+      </section>
+
+      <section class="card card-full-width">
+        <span class="card-tag">Gestión de Riesgos</span>
+        <h2>Errores Comunes a Evitar</h2>
+        <p>Una mala propuesta técnica puede arruinar proyectos antes de tirar la primera línea de código. Los fallos más críticos incluyen la ambigüedad en el alcance (provocando el fenómeno del <em>Scope Creep</em>), la elección de tecnologías obsoletas por simple comodidad, y la ausencia total de métricas de rendimiento o planes de pruebas iniciales.</p>
+      </section>
+
+      <section class="card card-full-width">
+        <span class="card-tag">Caso Real</span>
+        <h2>Estructura de un Documento Técnico</h2>
+        <p>A continuación se detalla el esqueleto técnico enfocado en la construcción de una plataforma Web moderna:</p>
+        
+        <div class="example-box">
+          <div class="example-header">
+            <h3>Documento de Arquitectura: Plataforma Agro-Industrial "Green Gold"</h3>
+          </div>
+          
+          <div class="example-field">
+            <div class="example-label">1. Definición del Backend & Persistencia</div>
+            <div class="example-value">Se implementará una arquitectura basada en microservicios utilizando entornos robustos, garantizando transacciones seguras mediante comandos e indexación optimizada en la base de datos mediante JOINs eficientes.</div>
+          </div>
+
+          <div class="example-field">
+            <div class="example-label">2. Componente de Frontend e Interfaz</div>
+            <div class="example-value">Interfaz limpia construida bajo layouts modernos con CSS modular y arquitectura adaptativa (Responsive UI), consumiendo datos de forma asíncrona mediante JavaScript nativo.</div>
+          </div>
+
+          <div class="example-field">
+            <div class="example-label">3. Seguridad y Restricciones</div>
+            <div class="example-value">Cifrado de credenciales de acceso, control de sesiones mediante tokens y sanitización estricta de consultas SQL para prevenir vulnerabilidades de inyección de código.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-full-width">
+        <span class="card-tag" style="background-color: rgba(16, 185, 129, 0.1); color: var(--success-green);">Mapa de Ingeniería</span>
+        <h2>La Propuesta Técnica como Traductor</h2>
+        <p>Una propuesta técnica no es teoría vacía; actúa como un mapa estructural. Toma un problema del cliente (negocio) y lo desglosa en la arquitectura exacta que vas a programar (Frontend, Backend, Base de Datos e Infraestructura).</p>
+        
+        <div class="example-box" style="border-left-color: var(--success-green); text-align: center;">
+          <p style="color: var(--text-primary); text-align: left; margin-bottom: 15px;">
+            <strong>Ejemplo de Flujo de Traducción Técnica:</strong>
+          </p>
+          <div style="background: #11141a; padding: 20px; border-radius: 6px; text-align: left; border: 1px dashed var(--border-color);">
+            <p>❌ <strong>Problema Base:</strong> "El sistema de inventario se congela al generar reportes."</p>
+            <p style="margin-top: 10px;">➔ <strong>Traducción a Propuesta Técnica (Arquitectura):</strong></p>
+            <ul class="spec-list" style="margin-left: 15px;">
+              <li><strong>BD:</strong> Índices optimizados en tablas transaccionales.</li>
+              <li><strong>Backend:</strong> Procesamiento de reportes asíncronos en segundo plano.</li>
+              <li><strong>Frontend:</strong> Spinner de carga reactivo para mejorar la experiencia de usuario (UX).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 - Análisis y Desarrollo de Software. Entorno Práctico SENA.</p>
+  </footer>
+</body>
+</html>
