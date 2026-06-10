@@ -1,2 +1,2 @@
-# Propuesta_t-cnica_examen
+# Propuesta_tecnica_examen
 Examen de belman
